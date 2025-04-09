@@ -37,13 +37,13 @@ shell: ## SSH into container
 local-start: ##Start laravel project using artisan
 	php ./src/artisan serve
 
-push-gcp:
+push-gcp: ##Push application image to Container Registry on GCP
 	make build
 	gcloud config set project ${PROJECT_NAME}
 	docker tag ${IMAGE_NAME} gcr.io/${PROJECT_NAME}/${IMAGE_NAME}
 	docker push gcr.io/${PROJECT_NAME}/${IMAGE_NAME}
 
-update-gcp:
+update-gcp: ##Update Google Cloud Run Service with new image
 	gcloud run services update ${SERVICE_NAME} --image=gcr.io/${PROJECT_NAME}/${IMAGE_NAME}:latest --region=${SERVICE_REGION}
 
 ##gcloud run services update <SERVICE_NAME> --image=gcr.io/<PROJECT_NAME>/<IMAGE_NAME>:latest --region=<SERVICE_REGION>

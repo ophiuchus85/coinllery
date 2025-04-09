@@ -156,5 +156,14 @@
         <footer>
             <p>Created with 💜 by <a href="https://zora.co/@qabqabqab" target="_blank"><strong>@qabqabqab</strong></a> and <a href="https://zora.co/@ophiuchus85" target="_blank"><strong>@ophiuchus85</strong></a></p>
         </footer>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0CH2KN6B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZY0CH2KN6B');
+        </script>
     </body>
 </html>
