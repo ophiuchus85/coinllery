@@ -1,0 +1,1 @@
+<p>Created with 💜 by <a href="https://zora.co/@qabqabqab" target="_blank"><strong>@qabqabqab</strong></a> and <a href="https://zora.co/@ophiuchus85" target="_blank"><strong>@ophiuchus85</strong></a></p>
