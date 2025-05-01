@@ -5,15 +5,13 @@ use Laravel\Socialite\Facades\Socialite;
 use App\Providers\Privy\PrivyProvider;
 use App\Http\Controllers\Privy\PrivyAuthController;
 
-Route::get('/', function () {
-    return view('coinllery.home');
-});
+use App\Http\Controllers\Coinllery\Home;
+use App\Http\Controllers\Coinllery\Coin;
+use App\Http\Controllers\Coinllery\User\Collection;
 
-Route::get('/coinllery/{id}', function () {
-    
-    return view('coinllery.welcome');
-
-});
+Route::get('/', [Home::class, 'index']);
+Route::get('/coinllery/{collectionID}', [Collection::class, 'index']);
+Route::get('/coin/data/{coinAddress}', [Coin::class, 'coin_sdk_metadata']);
 
 /*
 Route::get('/test', function () {
