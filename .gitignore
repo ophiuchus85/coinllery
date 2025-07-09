@@ -20,3 +20,5 @@ yarn-error.log
 Network Trash Folder
 Temporary Items
 .apdisk
+/.env*
+src/.env.docker
