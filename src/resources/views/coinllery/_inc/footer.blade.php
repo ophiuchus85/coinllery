@@ -1,1 +1,2 @@
 <p>Created with 💜 by <a href="https://zora.co/@qabqabqab" target="_blank"><strong>@qabqabqab</strong></a> and <a href="https://zora.co/@ophiuchus85" target="_blank"><strong>@ophiuchus85</strong></a></p>
+<p>Powered by <a href="https://docs.zora.co/coins/sdk/?utm_source=coinllery" target="_blank">Zora Coins SDK <img class="ms-1 d-inline" src="https://docs.zora.co/brand/zorb-logo.png" alt="Powered by Zora Coins SDK" width="24px"></a></p>
