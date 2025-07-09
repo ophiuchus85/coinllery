@@ -22,6 +22,7 @@ export default defineConfig({
         jsx: 'automatic',
     },
     server: {
+        https: true,
         allowedHosts: [
             'coinllery.io',
             'clean-pony-instantly.ngrok-free.app',
