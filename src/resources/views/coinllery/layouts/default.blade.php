@@ -2,6 +2,10 @@
 <html class="no-js" dir="ltr" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('coinllery/_inc/head')
+        
+        <!-- React Privy Auth -->
+        @viteReactRefresh
+        @vite('resources/js/components/LoginStatus.jsx')
     </head>
     <body>
         <main class="main-container">

@@ -10,7 +10,8 @@
             </ul>
         </div>
         <div class="col text-end">
-            <a href="https://docs.zora.co/coins/sdk/getting-started" target="_blank"><img class="mt-4 pt-2" src="https://docs.zora.co/brand/zorb-logo.png" alt="Powered by Zora Coins SDK" width="32px"></a>
+            <div id="privy-login-root" class="mt-4 pt-2"></div>
+            <!--<a href="https://docs.zora.co/coins/sdk" target="_blank"><img class="mt-4 pt-2" src="https://docs.zora.co/brand/zorb-logo.png" alt="Powered by Zora Coins SDK" width="32px"></a>-->
         </div>
     </nav>
 </div>

@@ -14,6 +14,14 @@ return [
     |
     */
 
+    'privy' => [
+        'app_id' => env('PRIVY_APP_ID'),
+        'app_secret' => env('PRIVY_APP_SECRET'),
+        'client_id' => env('PRIVY_CLIENT_ID'),
+        'redirect' => env('PRIVY_REDIRECT_URI'),
+        'base_uri' => env('PRIVY_BASE_URI', 'https://api.privy.io'),
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
