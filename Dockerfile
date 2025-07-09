@@ -9,8 +9,8 @@ COPY docker/uploads.ini /usr/local/etc/php/conf.d/uploads.ini
 
 #Copy Application
 RUN mkdir -p /app
-COPY . /app
-COPY ./src /app
+COPY --chown=www-data:www-data ./docker /app/docker
+COPY --chown=www-data:www-data ./src /app
 
 #Copy .env
 RUN mv /app/.env.docker /app/.env
@@ -20,7 +20,7 @@ RUN mv /app/.env.docker /app/.env
 # RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar && mv composer.phar /usr/local/bin/composer"
 RUN cd /app && composer install --no-dev
 
-RUN chown -R www-data: /app
+#RUN chown -R www-data: /app
 
 #Start Redis and Server
 CMD ["sh", "/app/docker/startup.sh"]
